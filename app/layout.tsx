@@ -39,25 +39,24 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="bg-[#1e1e1e] min-h-screen w-screen flex flex-col items-center justify-center snap-y snap-mandatory">
-          <NavigationMenu>
-  <NavigationMenuList>
-    <NavigationMenuItem>
-      <NavigationMenuContent>
-        <NavigationMenuTrigger >Home</NavigationMenuTrigger>
-        <NavigationMenuLink asChild>
-          <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
-                    href="/">
-                  <div className="mt-4 mb-2 text-lg font-medium">
+          <NavigationMenu className=" fixed top-0.5">
+  <NavigationMenuList >
+    <NavigationMenuItem className="w-max bg-[#1e1e1e]">
+      <NavigationMenuTrigger >Home</NavigationMenuTrigger>
+      <NavigationMenuContent className="w-max">
+        <NavigationMenuLink>
+          <NavigationMenuLink className=" w-max" >
+            <Link href={"/"}>
                       Tabula Rasa: Something New
-                    </div>
-          </a>
+              </Link>
+          </NavigationMenuLink>
           </NavigationMenuLink>
       </NavigationMenuContent>
     </NavigationMenuItem>
     <NavigationMenuItem>
+      <NavigationMenuTrigger>Mission Page</NavigationMenuTrigger>
       <NavigationMenuContent>
-        <NavigationMenuTrigger>Mission Page</NavigationMenuTrigger>
-        <NavigationMenuLink asChild><Link href={"/mission_page"}>Mission Page</Link></NavigationMenuLink>
+        <NavigationMenuLink ><Link href={"/mission_page"}>Mission Page</Link></NavigationMenuLink>
       </NavigationMenuContent>
     </NavigationMenuItem>
   </NavigationMenuList>
