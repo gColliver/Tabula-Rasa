@@ -33,8 +33,11 @@ export default function RootLayout({
             <Link href="/" className="text-sm font-medium tracking-wide">Tabula Rasa</Link>
             <div className="flex items-center gap-6 text-sm">
               <Link className="hover:underline underline-offset-4" href="/">Home</Link>
+              <Link className="hover:underline underline-offset-4" href="/about">About</Link>
               <Link className="hover:underline underline-offset-4" href="/bulletin">Bulletin</Link>
               <Link className="hover:underline underline-offset-4" href="/stats">Statistics</Link>
+              <Link className="hover:underline underline-offset-4" href="/contact">Contact</Link>
+              <Link className="hover:underline underline-offset-4" href="/donate">Donate</Link>
             </div>
           </nav>
         </header>
